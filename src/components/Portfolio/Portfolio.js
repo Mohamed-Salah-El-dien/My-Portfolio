@@ -12,6 +12,7 @@ import img6 from '../../assets/images/project-6.png';
 import img7 from '../../assets/images/project-7.png';
 import img8 from '../../assets/images/project-8.png';
 import img9 from '../../assets/images/project-9.png';
+import img10 from '../../assets/images/project-10.png';
 
 import './Portfolio.css';
 
@@ -62,41 +63,25 @@ const Portfolio = () => {
       <section className="projects">
         <ul className="filter-list">
           <li className="filter-item">
-            <button
-              className={toggleAll ? 'active' : ''}
-              data-filter-btn
-              onClick={handleAll}
-            >
+            <button className={toggleAll ? 'active' : ''} onClick={handleAll}>
               All
             </button>
           </li>
 
           <li className="filter-item">
-            <button
-              className={toggleWeb ? 'active' : ''}
-              data-filter-btn
-              onClick={handleWeb}
-            >
+            <button className={toggleWeb ? 'active' : ''} onClick={handleWeb}>
               Web development
             </button>
           </li>
 
           <li className="filter-item">
-            <button
-              className={toggleCrud ? 'active' : ''}
-              data-filter-btn
-              onClick={handleCrud}
-            >
+            <button className={toggleCrud ? 'active' : ''} onClick={handleCrud}>
               CRUD
             </button>
           </li>
 
           <li className="filter-item">
-            <button
-              className={toggleApi ? 'active' : ''}
-              data-filter-btn
-              onClick={handleApi}
-            >
+            <button className={toggleApi ? 'active' : ''} onClick={handleApi}>
               API Related
             </button>
           </li>
@@ -107,9 +92,7 @@ const Portfolio = () => {
             className={toggleList ? 'filter-select active' : 'filter-select '}
             onClick={handleToggle}
           >
-            <div className="select-value" data-selecct-value>
-              Select category
-            </div>
+            <div className="select-value">Select category</div>
 
             <div className="select-icon">
               <FontAwesomeIcon icon={faChevronDown} className="icon" />
@@ -118,27 +101,21 @@ const Portfolio = () => {
 
           <ul className="select-list">
             <li className="select-item">
-              <button className="active" data-select-item onClick={handleAll}>
+              <button className="active" onClick={handleAll}>
                 All
               </button>
             </li>
 
             <li className="select-item">
-              <button data-select-item onClick={handleWeb}>
-                Web design
-              </button>
+              <button onClick={handleWeb}>Web design</button>
             </li>
 
             <li className="select-item">
-              <button data-select-item onClick={handleCrud}>
-                Applications
-              </button>
+              <button onClick={handleCrud}>Applications</button>
             </li>
 
             <li className="select-item">
-              <button data-select-item onClick={handleApi}>
-                Web development
-              </button>
+              <button onClick={handleApi}>Web development</button>
             </li>
           </ul>
         </div>
@@ -148,8 +125,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web development"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Food-1">
               <figure className="project-img">
@@ -170,8 +145,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web development"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Food-2">
               <figure className="project-img">
@@ -192,8 +165,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web design"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/School">
               <figure className="project-img">
@@ -214,8 +185,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="applications"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Travel">
               <figure className="project-img">
@@ -236,8 +205,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web design"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/E-Commerce">
               <figure className="project-img">
@@ -256,10 +223,28 @@ const Portfolio = () => {
 
           <li
             className={
+              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-Clone">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img10} alt="dsm." loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Youtube Clone</h3>
+
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+
+          <li
+            className={
               toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web design"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Todo-List">
               <figure className="project-img">
@@ -280,8 +265,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web development"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Contact-App">
               <figure className="project-img">
@@ -302,8 +285,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="applications"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Shopping-Cart-App">
               <figure className="project-img">
@@ -324,8 +305,6 @@ const Portfolio = () => {
             className={
               toggleAll || toggleApi ? 'project-item  active' : 'project-item '
             }
-            data-filter-item
-            data-category="web development"
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Blog">
               <figure className="project-img">

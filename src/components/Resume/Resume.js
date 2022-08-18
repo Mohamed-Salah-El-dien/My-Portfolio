@@ -100,6 +100,16 @@ const Resume = () => {
           </li>
 
           <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Youtube Clone</h4>
+
+            <span>React — Static — Single Page — Responsive</span>
+
+            <p className="timeline-text">
+              A simple responsive Youtube Home Page clone built in react
+            </p>
+          </li>
+
+          <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Todo App</h4>
 
             <span>React — Dynamic — Redux — Single Page — Responsive</span>

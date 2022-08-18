@@ -147,7 +147,7 @@ const About = () => {
           </SwiperSlide>
 
           <SwiperSlide className="skills-item li">
-            <img src={icon7} alt="Git" title="Bootstrap" />
+            <img src={icon7} alt="Bootstrap" title="Bootstrap" />
           </SwiperSlide>
         </Swiper>
       </section>

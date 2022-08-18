@@ -38,7 +38,7 @@ const Contact = () => {
         <h2 className="h2 article-title">Contact</h2>
       </header>
 
-      <section className="mapbox" data-mapbox>
+      <section className="mapbox">
         <figure>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6843.0337130364305!2d31.163531210718148!3d30.95605558920677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7bb567e31d30f%3A0x39c2167fd34fd1b6!2z2KfYs9mI2KfZgiDZgdiq2K0g2KfZhNmE2Ycg2KzZhdmE2KkgLSDZgdix2Lkg2KfZhNmF2K3ZhNip!5e0!3m2!1sar!2seg!4v1660231540004!5m2!1sar!2seg"
