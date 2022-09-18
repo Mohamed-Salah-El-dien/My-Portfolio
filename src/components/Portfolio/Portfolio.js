@@ -13,6 +13,10 @@ import img7 from '../../assets/images/project-7.png';
 import img8 from '../../assets/images/project-8.png';
 import img9 from '../../assets/images/project-9.png';
 import img10 from '../../assets/images/project-10.png';
+import img11 from '../../assets/images/project-11.png';
+import img12 from '../../assets/images/project-12.png';
+import img13 from '../../assets/images/project-13.png';
+import img14 from '../../assets/images/project-14.png';
 
 import './Portfolio.css';
 
@@ -107,15 +111,15 @@ const Portfolio = () => {
             </li>
 
             <li className="select-item">
-              <button onClick={handleWeb}>Web design</button>
+              <button onClick={handleWeb}>Web development</button>
             </li>
 
             <li className="select-item">
-              <button onClick={handleCrud}>Applications</button>
+              <button onClick={handleCrud}>CRUD</button>
             </li>
 
             <li className="select-item">
-              <button onClick={handleApi}>Web development</button>
+              <button onClick={handleApi}>API Related</button>
             </li>
           </ul>
         </div>
@@ -316,6 +320,86 @@ const Portfolio = () => {
               </figure>
 
               <h3 className="project-title">Social Media App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/crypto-app">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img11} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">CryptoCurrency App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Exercise-App">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img14} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Exercise App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Google-Clone">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img12} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Google Clone App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-clone-app">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img13} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Youtube Clone App</h3>
 
               <p className="project-category">API Related</p>
             </a>

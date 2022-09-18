@@ -1,12 +1,12 @@
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 200px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 605px;
 }
 
 .sidebar-info {
@@ -20,6 +20,10 @@
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+}
+
+.avatar-box img {
+  width: 150px;
 }
 
 .info-content .name {
@@ -149,6 +153,10 @@
   color: var(--orange-yellow-crayola);
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 @media (min-width: 580px) {
   .sidebar {
     max-height: 180px;
@@ -156,7 +164,7 @@
   }
 
   .sidebar.active {
-    max-height: 584px;
+    max-height: 780px;
   }
 
   .sidebar-info {
@@ -199,6 +207,8 @@
   }
 
   .contacts-list {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -209,6 +219,10 @@
 }
 
 @media (min-width: 768px) {
+  .sidebar.active {
+    max-height: max-content;
+  }
+
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;

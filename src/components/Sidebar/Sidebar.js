@@ -14,7 +14,7 @@ import {
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useDispatch } from 'react-redux';
 import { pagesActions } from '../store/PagesSlice';
-import pic from '../../assets/images/my-avatar.png';
+import pic from '../../assets/images/img2.png';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -33,7 +33,7 @@ const Sidebar = () => {
     <aside className={toggleInfo ? 'sidebar active' : 'sidebar'} data-sidebar>
       <div className="sidebar-info ">
         <figure className="avatar-box">
-          <img src={pic} alt="" width="80" />
+          <img src={pic} alt="" />
         </figure>
 
         <div className="info-content">

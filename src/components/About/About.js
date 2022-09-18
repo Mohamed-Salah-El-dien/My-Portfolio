@@ -10,6 +10,8 @@ import icon4 from '../../assets/images/icon-4.png';
 import icon5 from '../../assets/images/icon-5.png';
 import icon6 from '../../assets/images/icon-6.png';
 import icon7 from '../../assets/images/icon-7.png';
+import icon8 from '../../assets/images/icon-8.png';
+import icon9 from '../../assets/images/icon-9.jpg';
 
 import './About.css';
 
@@ -147,7 +149,15 @@ const About = () => {
           </SwiperSlide>
 
           <SwiperSlide className="skills-item li">
-            <img src={icon7} alt="Bootstrap" title="Bootstrap" />
+            <img src={icon7} alt="Material-Ui" title="Material-Ui" />
+          </SwiperSlide>
+
+          <SwiperSlide className="skills-item li">
+            <img src={icon8} alt="Tailwind.Css" title="Tailwind.Css" />
+          </SwiperSlide>
+
+          <SwiperSlide className="skills-item li">
+            <img src={icon9} alt="RapidApi" title="RapidApi" />
           </SwiperSlide>
         </Swiper>
       </section>
