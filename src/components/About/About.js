@@ -1,25 +1,26 @@
-import React from 'react';
-import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-import { useSelector } from 'react-redux';
-import icon1 from '../../assets/images/icon-1.png';
-import icon2 from '../../assets/images/icon-2.png';
-import icon3 from '../../assets/images/icon-3.png';
-import icon4 from '../../assets/images/icon-4.png';
-import icon5 from '../../assets/images/icon-5.png';
-import icon6 from '../../assets/images/icon-6.png';
-import icon7 from '../../assets/images/icon-7.png';
-import icon8 from '../../assets/images/icon-8.png';
-import icon9 from '../../assets/images/icon-9.jpg';
+import React from "react";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import { useSelector } from "react-redux";
+import icon1 from "../../assets/images/icon-1.png";
+import icon2 from "../../assets/images/icon-2.png";
+import icon3 from "../../assets/images/icon-3.png";
+import icon4 from "../../assets/images/icon-4.png";
+import icon5 from "../../assets/images/icon-5.png";
+import icon6 from "../../assets/images/icon-6.png";
+import icon7 from "../../assets/images/icon-7.png";
+import icon8 from "../../assets/images/icon-8.png";
+import icon9 from "../../assets/images/icon-9.jpg";
+import icon10 from "../../assets/images/icon-10.png";
 
-import './About.css';
+import "./About.css";
 
 const About = () => {
   const about = useSelector((state) => state.pages.about);
 
   return (
-    <article className={about ? 'about  active' : 'about'}>
+    <article className={about ? "about  active" : "about"}>
       <header>
         <h2 className="h2 article-title">About me</h2>
       </header>
@@ -53,8 +54,8 @@ const About = () => {
               <h4 className="h4 service-item-title">Web development</h4>
 
               <p className="service-item-text">
-                I can design static responsive web pages in React using CSS or
-                Bootstrap if necessary.
+                I can design static responsive web pages in React using CSS,
+                Material-Ui or Tailwind.Css.
               </p>
             </div>
           </li>
@@ -67,7 +68,7 @@ const About = () => {
 
               <p className="service-item-text">
                 in addition to the previous, I can design dynamic CRUD
-                applications using React Redux and createEntityAdapter
+                applications using React Redux.
               </p>
             </div>
           </li>
@@ -142,6 +143,10 @@ const About = () => {
 
           <SwiperSlide className="skills-item li">
             <img src={icon5} alt="Redux" title="Redux" />
+          </SwiperSlide>
+
+          <SwiperSlide className="skills-item li">
+            <img src={icon10} alt="Next" title="Next" />
           </SwiperSlide>
 
           <SwiperSlide className="skills-item li">

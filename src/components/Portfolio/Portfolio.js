@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/fontawesome-free-solid';
-import { faEye } from '@fortawesome/fontawesome-free-regular';
-import { useSelector } from 'react-redux';
-import img1 from '../../assets/images/project-1.png';
-import img2 from '../../assets/images/project-2.png';
-import img3 from '../../assets/images/project-3.png';
-import img4 from '../../assets/images/project-4.png';
-import img5 from '../../assets/images/project-5.png';
-import img6 from '../../assets/images/project-6.png';
-import img7 from '../../assets/images/project-7.png';
-import img8 from '../../assets/images/project-8.png';
-import img9 from '../../assets/images/project-9.png';
-import img10 from '../../assets/images/project-10.png';
-import img11 from '../../assets/images/project-11.png';
-import img12 from '../../assets/images/project-12.png';
-import img13 from '../../assets/images/project-13.png';
-import img14 from '../../assets/images/project-14.png';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/fontawesome-free-solid";
+import { faEye } from "@fortawesome/fontawesome-free-regular";
+import { useSelector } from "react-redux";
+import img1 from "../../assets/images/project-1.png";
+import img2 from "../../assets/images/project-2.png";
+import img3 from "../../assets/images/project-3.png";
+import img4 from "../../assets/images/project-4.png";
+import img5 from "../../assets/images/project-5.png";
+import img6 from "../../assets/images/project-6.png";
+import img7 from "../../assets/images/project-7.png";
+import img8 from "../../assets/images/project-8.png";
+import img9 from "../../assets/images/project-9.png";
+import img10 from "../../assets/images/project-10.png";
+import img11 from "../../assets/images/project-11.png";
+import img12 from "../../assets/images/project-12.png";
+import img13 from "../../assets/images/project-13.png";
+import img14 from "../../assets/images/project-14.png";
+import img15 from "../../assets/images/project-15.png";
 
-import './Portfolio.css';
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const portfolio = useSelector((state) => state.pages.portfolio);
@@ -59,7 +60,7 @@ const Portfolio = () => {
   };
 
   return (
-    <article className={portfolio ? 'portfolio active' : 'portfolio'}>
+    <article className={portfolio ? "portfolio active" : "portfolio"}>
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
@@ -67,25 +68,25 @@ const Portfolio = () => {
       <section className="projects">
         <ul className="filter-list">
           <li className="filter-item">
-            <button className={toggleAll ? 'active' : ''} onClick={handleAll}>
+            <button className={toggleAll ? "active" : ""} onClick={handleAll}>
               All
             </button>
           </li>
 
           <li className="filter-item">
-            <button className={toggleWeb ? 'active' : ''} onClick={handleWeb}>
+            <button className={toggleWeb ? "active" : ""} onClick={handleWeb}>
               Web development
             </button>
           </li>
 
           <li className="filter-item">
-            <button className={toggleCrud ? 'active' : ''} onClick={handleCrud}>
+            <button className={toggleCrud ? "active" : ""} onClick={handleCrud}>
               CRUD
             </button>
           </li>
 
           <li className="filter-item">
-            <button className={toggleApi ? 'active' : ''} onClick={handleApi}>
+            <button className={toggleApi ? "active" : ""} onClick={handleApi}>
               API Related
             </button>
           </li>
@@ -93,7 +94,7 @@ const Portfolio = () => {
 
         <div className="filter-select-box">
           <button
-            className={toggleList ? 'filter-select active' : 'filter-select '}
+            className={toggleList ? "filter-select active" : "filter-select "}
             onClick={handleToggle}
           >
             <div className="select-value">Select category</div>
@@ -127,7 +128,7 @@ const Portfolio = () => {
         <ul className="project-list">
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Food-1">
@@ -147,7 +148,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Food-2">
@@ -167,7 +168,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/School">
@@ -187,7 +188,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Travel">
@@ -207,7 +208,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/E-Commerce">
@@ -227,7 +228,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleWeb ? 'project-item  active' : 'project-item '
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-Clone">
@@ -247,7 +248,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
+              toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Todo-List">
@@ -267,7 +268,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
+              toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Contact-App">
@@ -287,7 +288,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleCrud ? 'project-item  active' : 'project-item '
+              toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Shopping-Cart-App">
@@ -307,7 +308,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Blog">
@@ -327,7 +328,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/crypto-app">
@@ -347,7 +348,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Exercise-App">
@@ -367,7 +368,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Google-Clone">
@@ -387,7 +388,7 @@ const Portfolio = () => {
 
           <li
             className={
-              toggleAll || toggleApi ? 'project-item  active' : 'project-item '
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
             <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-clone-app">
@@ -400,6 +401,26 @@ const Portfolio = () => {
               </figure>
 
               <h3 className="project-title">Youtube Clone App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Weather-App">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img15} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Weather App</h3>
 
               <p className="project-category">API Related</p>
             </a>

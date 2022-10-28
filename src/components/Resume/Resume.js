@@ -1,16 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen } from '@fortawesome/fontawesome-free-solid';
-import { faFolderOpen } from '@fortawesome/fontawesome-free-regular';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookOpen } from "@fortawesome/fontawesome-free-solid";
+import { faFolderOpen } from "@fortawesome/fontawesome-free-regular";
+import { useSelector } from "react-redux";
 
-import './Resume.css';
+import "./Resume.css";
 
 const Resume = () => {
   const resume = useSelector((state) => state.pages.resume);
 
   return (
-    <article className={resume ? 'resume active' : 'resume'}>
+    <article className={resume ? "resume active" : "resume"}>
       <header>
         <h2 className="h2 article-title">Resume</h2>
       </header>
@@ -76,6 +76,17 @@ const Resume = () => {
               Using Rapid API this application provides news, images, videos,
               and search results related to the search term provided by the
               user.
+            </p>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Weather Application</h4>
+
+            <span>React — Dynamic — Redux — Rapid-API</span>
+
+            <p className="timeline-text">
+              Weather app that provides weather data based on the user's
+              geolocation with the ability to search for any city.
             </p>
           </li>
 
