@@ -27,7 +27,7 @@ const Resume = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Faculity of Science Tanta University
+              Faculty of Science Tanta University
             </h4>
 
             <span>2015 — 2019</span>
