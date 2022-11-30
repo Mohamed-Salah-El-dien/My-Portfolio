@@ -18,6 +18,8 @@ import img12 from "../../assets/images/project-12.png";
 import img13 from "../../assets/images/project-13.png";
 import img14 from "../../assets/images/project-14.png";
 import img15 from "../../assets/images/project-15.png";
+import img16 from "../../assets/images/project-16.png";
+import img17 from "../../assets/images/project-17.png";
 
 import "./Portfolio.css";
 
@@ -421,6 +423,46 @@ const Portfolio = () => {
               </figure>
 
               <h3 className="project-title">Weather App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Real-Estate-App">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img16} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Real Estate App</h3>
+
+              <p className="project-category">API Related</p>
+            </a>
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <a href="https://github.com/Mohamed-Salah-El-dien/Story-App">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FontAwesomeIcon icon={faEye} className="icon" />
+                </div>
+
+                <img src={img17} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 className="project-title">Story App</h3>
 
               <p className="project-category">API Related</p>
             </a>

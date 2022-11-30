@@ -27,7 +27,7 @@ const Resume = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Faculty of Science Tanta University
+              Faculity of Science Tanta University
             </h4>
 
             <span>2015 — 2019</span>
@@ -76,6 +76,37 @@ const Resume = () => {
               Using Rapid API this application provides news, images, videos,
               and search results related to the search term provided by the
               user.
+            </p>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              Real Estate Application (Next)
+            </h4>
+
+            <span>
+              Next.js — Dynamic — Redux — Rapid-API — TailwindCss — MultiPage —
+              Responsive
+            </span>
+
+            <p className="timeline-text">
+              Real Estate application where the user can search for properties
+              for sale or rent with the ability to search for locations and the
+              ability to apply some search filters.
+            </p>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Story Application (MERN)</h4>
+
+            <span>
+              React — MongoDb — Node — Express — Redux — MultiPage — Responsive
+            </span>
+
+            <p className="timeline-text">
+              A story application which require the user to be authenticated to
+              be able to write, edit and delete stories, and every user have
+              access to only his/her stories.
             </p>
           </li>
 

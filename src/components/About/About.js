@@ -13,6 +13,8 @@ import icon7 from "../../assets/images/icon-7.png";
 import icon8 from "../../assets/images/icon-8.png";
 import icon9 from "../../assets/images/icon-9.jpg";
 import icon10 from "../../assets/images/icon-10.png";
+import icon11 from "../../assets/images/icon-11.png";
+import icon12 from "../../assets/images/icon-12.png";
 
 import "./About.css";
 
@@ -27,17 +29,21 @@ const About = () => {
 
       <section className="about-text">
         <p>
-          I am a self-taught dev who about a year ago was curious and intrigued
-          about how simple lines of code could make apps and web pages, and got
-          tired of using a pc 24/7 and not knowing a thing about how a web page
-          or an app function.
+          I am a self-taught React developer who seeks a challenge in a
+          professional environment. I’ve worked on various applications that
+          have improved my technical skills and made me understand how to debug,
+          analyze, search for solutions and fix any problem.
         </p>
 
         <p>
-          Through the year I was learning the basics I fell in love with coding
-          and found it as fun and sometimes as enraging as playing games, and
-          decided if I want to spend the rest of my life doing something that I
-          can call my job proudly, it would be coding.
+          I’ve developed many applications starting from simple static React
+          websites to dynamic applications like a google clone or a youtube
+          clone to a dynamic Next.js application to a MERN full-stack CRUD
+          application. I am resilient, persistent, and always looking to improve
+          myself. My keen interest in programming and design helps me find
+          creative solutions to technical challenges and develop visually
+          appealing websites. My knowledge of technical standards helps me
+          manage projects efficiently.
         </p>
       </section>
 
@@ -85,6 +91,22 @@ const About = () => {
                 in addition to the previous, Using a remote API, I can get the
                 data and lay it out in a responsive manner according to the
                 data's nature
+              </p>
+            </div>
+          </li>
+
+          <li className="service-item">
+            <div className="service-icon-box"></div>
+
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">
+                MERN full-stack Applications
+              </h4>
+
+              <p className="service-item-text">
+                in addition to the previous, i can create
+                full-stack applications using MongoDB, Express, React, and
+                Node.js.
               </p>
             </div>
           </li>
@@ -147,6 +169,14 @@ const About = () => {
 
           <SwiperSlide className="skills-item li">
             <img src={icon10} alt="Next" title="Next" />
+          </SwiperSlide>
+
+          <SwiperSlide className="skills-item li">
+            <img src={icon11} alt="MongoDB" title="MongoDB" />
+          </SwiperSlide>
+
+          <SwiperSlide className="skills-item li">
+            <img src={icon12} alt="Node" title="Node" />
           </SwiperSlide>
 
           <SwiperSlide className="skills-item li">
