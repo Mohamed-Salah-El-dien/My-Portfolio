@@ -97,6 +97,24 @@ const Resume = () => {
           </li>
 
           <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              Social Media Application (MERN)
+            </h4>
+
+            <span>
+              React — MongoDb — Node — Express — Redux — MultiPage — Responsive
+              — Dark/Light — Material-Ui
+            </span>
+
+            <p className="timeline-text">
+              Authenticated MERN Full Stack Social Media App in which the user
+              can create posts and delete his/her posts and like the posts and
+              add other users as friends and visit other user's profile to see
+              their posts.
+            </p>
+          </li>
+
+          <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Story Application (MERN)</h4>
 
             <span>
