@@ -21,6 +21,7 @@ import img15 from "../../assets/images/project-15.png";
 import img16 from "../../assets/images/project-16.png";
 import img17 from "../../assets/images/project-17.png";
 import img18 from "../../assets/images/project-18.png";
+import img19 from "../../assets/images/project-19.png";
 
 import "./Portfolio.css";
 
@@ -62,6 +63,24 @@ const Portfolio = () => {
     setToggleApi(true);
   };
 
+  const Section = ({ link, image, title, category }) => {
+    return (
+      <a href={link}>
+        <figure className="project-img">
+          <div className="project-item-icon-box">
+            <FontAwesomeIcon icon={faEye} className="icon" />
+          </div>
+
+          <img src={image} alt="finance" loading="lazy" />
+        </figure>
+
+        <h3 className="project-title">{title}</h3>
+
+        <p className="project-category">{category}</p>
+      </a>
+    );
+  };
+
   return (
     <article className={portfolio ? "portfolio active" : "portfolio"}>
       <header>
@@ -78,7 +97,7 @@ const Portfolio = () => {
 
           <li className="filter-item">
             <button className={toggleWeb ? "active" : ""} onClick={handleWeb}>
-              Web development
+              Static websites
             </button>
           </li>
 
@@ -115,7 +134,7 @@ const Portfolio = () => {
             </li>
 
             <li className="select-item">
-              <button onClick={handleWeb}>Web development</button>
+              <button onClick={handleWeb}>Static websites</button>
             </li>
 
             <li className="select-item">
@@ -131,22 +150,132 @@ const Portfolio = () => {
         <ul className="project-list">
           <li
             className={
-              toggleAll || toggleWeb ? "project-item  active" : "project-item "
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Food-1">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/All-in-One-v1.0"
+              image={img19}
+              title="All-in-One v1.0"
+              category="API Related"
+            />
+          </li>
 
-                <img src={img1} alt="finance" loading="lazy" />
-              </figure>
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Social-media-app-1"
+              image={img18}
+              title="Social Media App"
+              category="API Related"
+            />
+          </li>
 
-              <h3 className="project-title">Food 1</h3>
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Google-Clone"
+              image={img12}
+              title="Google Clone App"
+              category="API Related"
+            />
+          </li>
 
-              <p className="project-category">Web development</p>
-            </a>
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Youtube-clone-app"
+              image={img13}
+              title="Youtube Clone App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Exercise-App"
+              image={img14}
+              title="Exercise App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Weather-App"
+              image={img15}
+              title="Weather App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/crypto-app"
+              image={img11}
+              title="CryptoCurrency App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Real-Estate-App"
+              image={img16}
+              title="Real Estate App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Story-App"
+              image={img17}
+              title="Story App"
+              category="API Related"
+            />
+          </li>
+
+          <li
+            className={
+              toggleAll || toggleApi ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Blog"
+              image={img9}
+              title="Social Media App"
+              category="API Related"
+            />
           </li>
 
           <li
@@ -154,19 +283,12 @@ const Portfolio = () => {
               toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Food-2">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img2} alt="orizon" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Food 2</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Food-1"
+              image={img1}
+              title="Food 1"
+              category="Static websites"
+            />
           </li>
 
           <li
@@ -174,19 +296,12 @@ const Portfolio = () => {
               toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/School">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img3} alt="fundo" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">School</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Food-2"
+              image={img2}
+              title="Food 2"
+              category="Static websites"
+            />
           </li>
 
           <li
@@ -194,19 +309,12 @@ const Portfolio = () => {
               toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Travel">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img4} alt="brawlhalla" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Travel</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/School"
+              image={img3}
+              title="School"
+              category="Static websites"
+            />
           </li>
 
           <li
@@ -214,19 +322,12 @@ const Portfolio = () => {
               toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/E-Commerce">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img5} alt="dsm." loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">E-commerce</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Travel"
+              image={img4}
+              title="Travel"
+              category="Static websites"
+            />
           </li>
 
           <li
@@ -234,19 +335,25 @@ const Portfolio = () => {
               toggleAll || toggleWeb ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-Clone">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/E-Commerce"
+              image={img5}
+              title="E-commerce"
+              category="Static websites"
+            />
+          </li>
 
-                <img src={img10} alt="dsm." loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Youtube Clone</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
+          <li
+            className={
+              toggleAll || toggleWeb ? "project-item  active" : "project-item "
+            }
+          >
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Youtube-Clone"
+              image={img10}
+              title="Youtube Clone"
+              category="Static websites"
+            />
           </li>
 
           <li
@@ -254,19 +361,12 @@ const Portfolio = () => {
               toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Todo-List">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img6} alt="metaspark" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Todo App</h3>
-
-              <p className="project-category">CRUD</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Todo-List"
+              image={img6}
+              title="Todo App"
+              category="CRUD"
+            />
           </li>
 
           <li
@@ -274,19 +374,12 @@ const Portfolio = () => {
               toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Contact-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img7} alt="summary" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Contact App</h3>
-
-              <p className="project-category">CRUD</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Contact-App"
+              image={img7}
+              title="Contact App"
+              category="CRUD"
+            />
           </li>
 
           <li
@@ -294,199 +387,12 @@ const Portfolio = () => {
               toggleAll || toggleCrud ? "project-item  active" : "project-item "
             }
           >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Shopping-Cart-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img8} alt="task manager" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Shoping Cart App</h3>
-
-              <p className="project-category">CRUD</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Blog">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img9} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Social Media App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/crypto-app">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img11} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">CryptoCurrency App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Exercise-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img14} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Exercise App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Google-Clone">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img12} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Google Clone App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Youtube-clone-app">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img13} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Youtube Clone App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Weather-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img15} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Weather App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Real-Estate-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img16} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Real Estate App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Story-App">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img17} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Story App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
-          </li>
-
-          <li
-            className={
-              toggleAll || toggleApi ? "project-item  active" : "project-item "
-            }
-          >
-            <a href="https://github.com/Mohamed-Salah-El-dien/Social-media-app-1">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <FontAwesomeIcon icon={faEye} className="icon" />
-                </div>
-
-                <img src={img18} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Social Media App</h3>
-
-              <p className="project-category">API Related</p>
-            </a>
+            <Section
+              link="https://github.com/Mohamed-Salah-El-dien/Shopping-Cart-App"
+              image={img8}
+              title="Shopping Cart App"
+              category="CRUD"
+            />
           </li>
         </ul>
       </section>

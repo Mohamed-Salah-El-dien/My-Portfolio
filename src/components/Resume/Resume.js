@@ -9,6 +9,18 @@ import "./Resume.css";
 const Resume = () => {
   const resume = useSelector((state) => state.pages.resume);
 
+  const Section = ({ title, tools, description }) => {
+    return (
+      <li className="timeline-item">
+        <h4 className="h4 timeline-item-title">{title}</h4>
+
+        <span>{tools}</span>
+
+        <p className="timeline-text">{description}</p>
+      </li>
+    );
+  };
+
   return (
     <article className={resume ? "resume active" : "resume"}>
       <header>
@@ -47,254 +59,166 @@ const Resume = () => {
         </div>
 
         <ol className="timeline-list">
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Youtube-Clone Application
-            </h4>
+          <Section
+            title="All-in-One v1.0 (MERN)"
+            tools=" React — MongoDb — Node — Express — Redux — MultiPage — Responsive
+            "
+            description="Authenticated MERN Full Stack App in which the user
+            can post products and delete/edit his/her products 
+            and comment on the products and visit other user's profile to see
+            their products and exchange messages with other users."
+          />
 
-            <span>
-              React — Dynamic — Redux — Rapid-API — Material-Ui — MultiPage —
-              Responsive — dark/light
-            </span>
+          <Section
+            title="Youtube-Clone Application"
+            tools="React — Dynamic — Redux — Rapid-API — Material-Ui — MultiPage —
+            Responsive — dark/light"
+            description="Youtube clone powered by RapidAPI in which the user can search for
+            any video or category and watch videos or open a channel to see
+            more videos from the content creator."
+          />
 
-            <p className="timeline-text">
-              Youtube clone powered by RapidAPI in which the user can search for
-              any video or category and watch videos or open a channel to see
-              more videos from the content creator.
-            </p>
-          </li>
+          <Section
+            title="Google-Clone Application"
+            tools="React — Dynamic — Redux — Rapid-API — TailwindCss — MultiPage —
+            Responsive — dark/light"
+            description="Using Rapid API this application provides news, images, videos,
+            and search results related to the search term provided by the
+            user."
+          />
 
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Google-Clone Application</h4>
+          <Section
+            title="Social Media Application (MERN)"
+            tools=" React — MongoDb — Node — Express — Redux — MultiPage — Responsive
+            — Dark/Light — Material-Ui"
+            description=" Authenticated MERN Full Stack Social Media App in which the user
+            can create posts and delete his/her posts and like the posts and
+            add other users as friends and visit other user's profile to see
+            their posts."
+          />
 
-            <span>
-              React — Dynamic — Redux — Rapid-API — TailwindCss — MultiPage —
-              Responsive — dark/light
-            </span>
+          <Section
+            title="Story Application (MERN)"
+            tools=" React — MongoDb — Node — Express — Redux — MultiPage — Responsive"
+            description="A story application which require the user to be authenticated to
+            be able to write, edit and delete stories, and every user have
+            access to only his/her stories."
+          />
 
-            <p className="timeline-text">
-              Using Rapid API this application provides news, images, videos,
-              and search results related to the search term provided by the
-              user.
-            </p>
-          </li>
+          <Section
+            title="Real Estate Application (Next)"
+            tools=" Next.js — Dynamic — Redux — Rapid-API — TailwindCss — MultiPage —
+            Responsive"
+            description="Real Estate application where the user can search for properties
+            for sale or rent with the ability to search for locations and the
+            ability to apply some search filters."
+          />
 
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Real Estate Application (Next)
-            </h4>
+          <Section
+            title="Weather Application"
+            tools="React — Dynamic — Redux — Rapid-API — Css"
+            description="Weather app that provides weather data based on the user's
+            geolocation with the ability to search for any city."
+          />
 
-            <span>
-              Next.js — Dynamic — Redux — Rapid-API — TailwindCss — MultiPage —
-              Responsive
-            </span>
+          <Section
+            title="Exercises Application"
+            tools="React — Dynamic — Redux — Rapid-API — Material-Ui — MultiPage —
+            Responsive"
+            description="Exercise app in which the user can either search for an exercise
+            or pick from different categories which part of the body the user
+            needs exercises for, or pick from different sets of exercises,
+            then the application would provide illustrations and youtube
+            videos for either the search term provided or the chosen category."
+          />
 
-            <p className="timeline-text">
-              Real Estate application where the user can search for properties
-              for sale or rent with the ability to search for locations and the
-              ability to apply some search filters.
-            </p>
-          </li>
+          <Section
+            title="Cryptocurrency Application"
+            tools="React — Dynamic — Redux — Rapid-API — Material-Ui-Components —
+            MultiPage — Responsive"
+            description="A Crypto application in which the user can get the global stats of
+            all cryptocurrencies with the ability to search for a single
+            cryptocurrency and acquire all the detailed information about it,
+            there is also a news section where the user can read the news
+            about all cryptocurrencies or just search for a single
+            cryptocurrency news."
+          />
 
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Social Media Application (MERN)
-            </h4>
+          <Section
+            title="Blog Application"
+            tools="React — Dynamic — Redux — API — MultiPage — Responsive — Css"
+            description="A social-media-themed app where the data are fetched from a remote
+            API and laid out with a post-themed format, the user can add,
+            delete and edit any post. each post has in addition to the data
+            fetched a (time ago ) function that shows when the post was added
+            or edited, and each post also has reaction buttons."
+          />
 
-            <span>
-              React — MongoDb — Node — Express — Redux — MultiPage — Responsive
-              — Dark/Light — Material-Ui
-            </span>
+          <Section
+            title="Todo Application"
+            tools="React — Dynamic — Redux — Single Page — Responsive"
+            description="A Simple todo app where the user can enter one or multiple todos
+            in the input and the todos will be destructured into a single todo
+            in the todo list. of course, the user has the ability to delete
+            any todo and it will be saved in a list from which the user can
+            restore it to the todo list."
+          />
 
-            <p className="timeline-text">
-              Authenticated MERN Full Stack Social Media App in which the user
-              can create posts and delete his/her posts and like the posts and
-              add other users as friends and visit other user's profile to see
-              their posts.
-            </p>
-          </li>
+          <Section
+            title="Contact Application"
+            tools="React — Dynamic — Redux — MultiPage — Responsive"
+            description="A Simple contact app where the user can enter a name, email, and
+            phone number on the add contact page, a contact card would be
+            created on the home page with the previous data and the user can
+            delete the card or edit its content in the edit page."
+          />
 
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Story Application (MERN)</h4>
+          <Section
+            title="Shopping Cart Application"
+            tools="React — Dynamic — Redux — Single Page — Responsive"
+            description="A shopping cart app where the user can add items to the cart, the
+            total number of items is shown next to the cart logo, clicking the
+            cart logo would open the cart where the items selected are shown,
+            and the user has the ability to increase or decrease the quantity
+            of the items from the cart menu, and below the items, there is the
+            order button which shows the total price of the transaction."
+          />
 
-            <span>
-              React — MongoDb — Node — Express — Redux — MultiPage — Responsive
-            </span>
+          <Section
+            title="Youtube Home-Page Clone"
+            tools="React — Static — Pop-up News Letter and Ads — Dropdown Menus —
+            Single Page — Responsive"
+            description="A simple responsive Youtube Home Page clone built in react"
+          />
 
-            <p className="timeline-text">
-              A story application which require the user to be authenticated to
-              be able to write, edit and delete stories, and every user have
-              access to only his/her stories.
-            </p>
-          </li>
+          <Section
+            title="E-commerce Landing Page"
+            tools="React — Static — Single Page — Responsive"
+            description="E-commerce single-page website with pop-up ads, dropdown menus,
+            and a different mobile look."
+          />
 
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Weather Application</h4>
+          <Section
+            title="A Travel Agency website"
+            tools="React — Static — Video Player — Single Page — Responsive"
+            description="A simple CSS-focused single-page travel-themed website contains a
+            slider-like format through which different videos can be played in
+            the background."
+          />
 
-            <span>React — Dynamic — Redux — Rapid-API</span>
+          <Section
+            title="School website"
+            tools="React — Static — SwiperJs — MultiPage — Responsive"
+            description="Simple CSS-focused multipage school-themed website."
+          />
 
-            <p className="timeline-text">
-              Weather app that provides weather data based on the user's
-              geolocation with the ability to search for any city.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Exercises Application</h4>
-
-            <span>
-              React — Dynamic — Redux — Rapid-API — Material-Ui — MultiPage —
-              Responsive
-            </span>
-
-            <p className="timeline-text">
-              Exercise app in which the user can either search for an exercise
-              or pick from different categories which part of the body the user
-              needs exercises for, or pick from different sets of exercises,
-              then the application would provide illustrations and youtube
-              videos for either the search term provided or the chosen category.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Cryptocurrency Application
-            </h4>
-
-            <span>
-              React — Dynamic — Redux — Rapid-API — Material-Ui-Components —
-              MultiPage — Responsive
-            </span>
-
-            <p className="timeline-text">
-              A Crypto application in which the user can get the global stats of
-              all cryptocurrencies with the ability to search for a single
-              cryptocurrency and acquire all the detailed information about it,
-              there is also a news section where the user can read the news
-              about all cryptocurrencies or just search for a single
-              cryptocurrency news.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Blog Application</h4>
-
-            <span>React — Dynamic — Redux — API — MultiPage — Responsive</span>
-
-            <p className="timeline-text">
-              A social-media-themed app where the data are fetched from a remote
-              API and laid out with a post-themed format, the user can add,
-              delete and edit any post. each post has in addition to the data
-              fetched a (time ago ) function that shows when the post was added
-              or edited, and each post also has reaction buttons.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Todo Application</h4>
-
-            <span>React — Dynamic — Redux — Single Page — Responsive</span>
-
-            <p className="timeline-text">
-              A Simple todo app where the user can enter one or multiple todos
-              in the input and the todos will be destructured into a single todo
-              in the todo list. of course, the user has the ability to delete
-              any todo and it will be saved in a list from which the user can
-              restore it to the todo list.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Contact Application</h4>
-
-            <span>React — Dynamic — Redux — MultiPage — Responsive</span>
-
-            <p className="timeline-text">
-              A Simple contact app where the user can enter a name, email, and
-              phone number on the add contact page, a contact card would be
-              created on the home page with the previous data and the user can
-              delete the card or edit its content in the edit page.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Shopping Cart Application
-            </h4>
-
-            <span>React — Dynamic — Redux — Single Page — Responsive</span>
-
-            <p className="timeline-text">
-              A shopping cart app where the user can add items to the cart, the
-              total number of items is shown next to the cart logo, clicking the
-              cart logo would open the cart where the items selected are shown,
-              and the user has the ability to increase or decrease the quantity
-              of the items from the cart menu, and below the items, there is the
-              order button which shows the total price of the transaction.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Youtube Home-Page Clone</h4>
-
-            <span>React — Static — Single Page — Responsive</span>
-
-            <p className="timeline-text">
-              A simple responsive Youtube Home Page clone built in react
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">E-commerce Landing Page</h4>
-
-            <span>
-              React — Static — Pop-up News Letter and Ads — Dropdown Menus —
-              Single Page — Responsive
-            </span>
-
-            <p className="timeline-text">
-              E-commerce single-page website with pop-up ads, dropdown menus,
-              and a different mobile look.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">A Travel Agency website</h4>
-
-            <span>
-              React — Static — Video Player — Single Page — Responsive
-            </span>
-
-            <p className="timeline-text">
-              A simple CSS-focused single-page travel-themed website contains a
-              slider-like format through which different videos can be played in
-              the background.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">School website</h4>
-
-            <span>React — Static — SwiperJs — MultiPage — Responsive</span>
-
-            <p className="timeline-text">
-              Simple CSS-focused multipage school-themed website.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Two Restaurants websites</h4>
-
-            <span>
-              React — Static — SwiperJs — LightGalleryJs — Single Page —
-              Responsive
-            </span>
-
-            <p className="timeline-text">
-              Two simple Restaurant-themed websites focused on CSS, contain
-              swiper js, light gallery js, and animations.
-            </p>
-          </li>
+          <Section
+            title="Two Restaurants websites"
+            tools="React — Static — SwiperJs — LightGalleryJs — Single Page —
+            Responsive"
+            description="Two simple Restaurant-themed websites focused on CSS, contain
+            swiper js, light gallery js, and animations."
+          />
         </ol>
       </section>
     </article>
